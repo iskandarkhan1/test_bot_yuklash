@@ -3,7 +3,7 @@ from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
 from keyboards.default.shogrt import menu
 from loader import dp, db, bot
-from data.config import ADMINS,CHANNELS
+from data.config import ADMINS
 
 
 @dp.message_handler(CommandStart())

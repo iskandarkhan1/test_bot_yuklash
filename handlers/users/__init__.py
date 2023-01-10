@@ -7,5 +7,3 @@ from . import ish_joy
 from . import uztoz_kerak
 
 
-# from . import echo
-
