@@ -3,7 +3,7 @@ from aiogram import types
 
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
-from data.config import ADMINS, CHANNELS
+from data.config import ADMINS
 from loader import dp,bot 
 from states.personalData import hodim_kerak_state
 from keyboards.inline.inline_ import menu1
