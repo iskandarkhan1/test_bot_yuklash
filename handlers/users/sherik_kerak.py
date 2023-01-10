@@ -58,7 +58,7 @@ async def shk_phone(message: types.Message, state: FSMContext):
     await state.update_data(
         {"kasblar": qila_oladigan_iw}
     )
-    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +99891-34-56-78. ")
+    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +998912345678. ")
 
     await sherik_kerak.phone.set()
 
@@ -160,7 +160,7 @@ async def shk_xulosa(message: types.Message, state: FSMContext):
     msg += f"🧑‍💻 Kasbi: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg += f" #Sherik  #{hudud} , #{qila_oladigan_iw} , #{job} ,"
+    msg += f" #Sherik  #{hudud} #{qila_oladigan_iw} #{job}"
   
     await message.answer(msg)
  
@@ -194,7 +194,7 @@ async def yes(message:types.Message,state:FSMContext):
     msg += f"🧑‍💻 Kasbi: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg += f" #Sherik  #{hudud} , #{qila_oladigan_iw} , #{job}"
+    msg += f" #Sherik  #{hudud}  #{qila_oladigan_iw} #{job}"
  
     await message.answer("Yangi malumot qabul qilindi !!! ", reply_markup=menu)
     await bot.send_message(chat_id=ADMINS[0], text=msg) 

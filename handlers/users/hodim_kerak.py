@@ -55,7 +55,7 @@ async def hk_kasblar(message: types.Message, state: FSMContext):
     await state.update_data(
         {"kasblar": qila_oladigan_iw}
     )
-    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +99891-34-56-78. ")
+    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +998912345678. ")
 
     await hodim_kerak_state.phone.set()
 
@@ -161,7 +161,7 @@ async def kh_concution(message: types.Message, state: FSMContext):
     msg += f"🛠 Kasb: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg += f"#Hodim , #{hudud}, #{qila_oladigan_iw}, #{job}"
+    msg += f"#Hodim  #{hudud} #{qila_oladigan_iw} #{job}"
     await message.answer(msg)
 
 xdata={}
@@ -194,7 +194,7 @@ async def kh_ha(message:types.Message,state:FSMContext):
     msg += f"🧑‍💻 Kasbi: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg +=f"#Hodim  #{hudud}, #{qila_oladigan_iw}, #{concution}"
+    msg +=f"#Hodim  #{hudud} #{qila_oladigan_iw} #{concution}"
     await message.answer("Yangi malumot qabul qilindi !!! ", reply_markup=menu)
     await bot.send_message(chat_id=ADMINS[0], text=msg) 
     await state.finish()

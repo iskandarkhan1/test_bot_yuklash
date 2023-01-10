@@ -5,9 +5,6 @@ async def set_default_commands(dp):
     await dp.bot.set_my_commands(
         [
             types.BotCommand("start", "Botni ishga tushurish"),
-            types.BotCommand("help", "Help"),
-            types.BotCommand("yordam", "Yordam"),
-            types.BotCommand("boshlash", "Boshlash"),
-            types.BotCommand("app", "App"),
+            types.BotCommand("help", "Help")
         ]
     )

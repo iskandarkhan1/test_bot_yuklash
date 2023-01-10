@@ -54,7 +54,7 @@ async def uk_kaslar(message: types.Message, state: FSMContext):
     await state.update_data(
         {"kasblar": qila_oladigan_iw}
     )
-    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +99891-34-56-78. ")
+    await message.answer(" 📞 Telfon raqamingizni togri kiriting:  \n masalan +998912345678. ")
 
     await ustoz_kerak.phone.set()
 
@@ -163,7 +163,7 @@ async def uk_xulosa(message: types.Message, state: FSMContext):
     msg += f"🧑‍💻 Kasbi: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg += f"#Ustoz , #{hudud} , #{qila_oladigan_iw} ,#{job}"
+    msg += f"#Ustoz  #{hudud}  #{qila_oladigan_iw} #{job}"
     await message.answer(msg)
 
 @dp.message_handler(Text(equals="Ha"), state=ustoz_kerak.togri)
@@ -191,7 +191,7 @@ async def ha(message:types.Message,state:FSMContext):
     msg += f"🧑‍💻 Kasbi: - {job}\n"
     msg += f"🕔 Murojaat qilish vaqti : {time}\n"
     msg += f"💡 Maqsad - {concution}\n"
-    msg +=f"#Ustoz ,#{hudud} ,#{qila_oladigan_iw} ,#{job}"
+    msg +=f"#Ustoz #{hudud} #{qila_oladigan_iw} #{job}"
 
 
 
