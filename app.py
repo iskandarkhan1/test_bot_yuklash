@@ -23,14 +23,11 @@ if __name__ == '__main__':
 
 
 """
-dsfd
-sf
-ds
-fd
-sf
-sdf
-fds
-dsfsdfsdf
+FDGFDGFD
+F
+G
+F
+
 """
 
 
