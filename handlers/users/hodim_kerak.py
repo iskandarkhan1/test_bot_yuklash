@@ -169,9 +169,6 @@ xdata={}
 @dp.message_handler(Text(equals="Ha"), state=hodim_kerak_state.togri, user_id=5748826167)
 async def kh_ha(message:types.Message,state:FSMContext):
     data = await state.get_data()
-    print("botdan adminga ")
-    print(data)
-    xdata= data
     name = data.get("name")
     yosh = data.get("yosh")
     qila_oladigan_iw = data.get("kasblar")
